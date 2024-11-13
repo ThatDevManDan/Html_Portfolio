@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<title>Portofolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    #main {
+        margin-left: 120px
+    }
+   
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+       
+    }
+
+</style>
+<body class="w3-black">
+
+   
+    
+    <dialog id="popupSamurai">
+        <h2>Shattered Dynasty</h2>
+        <p>one of my faveroute games i have made , Shattered Dynasty is a 2D platfromer set in a post apocoliptic sogun era.</p>
+        <p> I created this game to get started with both 2D pixel art and get use to unity UI and system mecanices.</p>
+        <hr style="width:200px" class="w3-opacity">
+        <video autoplay loop muted src="assets/Samurai_game.mp4" width="500"> </video> 
+        <video autoplay loop muted src="assets/Samurai_build.mp4" width="500"> </video> 
+        <hr style="width:200px" class="w3-opacity">
+        <p>Main Ideas</p>
+        <p> * I expapanded my knollage of unity as a whole and try createing my own platfromer</p>
+        <p> * Adding a grappling hook and more physics based movement to set it apart form other platformers</p>
+        <button onclick="closeDialog('popupSamurai')">Close</button>
+    </dialog>
+
+    <dialog id="popupKnight">
+        <h2>Knight Watch</h2>
+        <p>Great ideas spark great games. Game got me started into the feild of Fps Games and the mechanics behind them</p>
+        <P>The idea of creating a fps game where you shoot knights is just silly enough that it might work and im looking foward on improveing this in th future</P>
+        <hr style="width:200px" class="w3-opacity">
+        <video autoplay loop muted src="assets/1113.mp4" width="500"> </video> 
+        <video autoplay loop muted src="assets/knight_build.mp4" width="500"> </video> 
+        <hr style="width:200px" class="w3-opacity">
+        <p>Main Ideas</p>
+        <p> * Fps in medavial times</p>
+        <p> * guns and explosions make games fun</p>
+        <button onclick="closeDialog('popupKnight')">
+            Close</button>
+    </dialog>
+
+    <dialog id="popupAsteroids">
+        <h2>Asteroids Destroyer</h2>
+        <p>while on my learning jorney i started thinking back on older games and how they would stand up in todays gameing industry</p>
+        <p> this sparked the idea of making a 3D astroids inspired game with a brand new movement and random asteriod generation.</p>
+
+        <video autoplay loop muted src="assets/space_shoot.mp4" width="500"> </video> 
+        <video autoplay loop muted src="assets/Space_build.mp4" width="500"> </video> 
+        <hr style="width:200px" class="w3-opacity">
+        <p>Main Ideas</p>
+        <p> * Fps in medavial times</p>
+        <p> * guns and explosions make games fun</p>
+        <button onclick="closeDialog('popupAsteroids')">Close</button>
+    </dialog>
+
+
+
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    
+        <img src="\assets\DH-93.jpg" style="width:100%">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>ABOUT</p>
+        </a>
+        <a href="#games" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>GAMES</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACT</p>
+         
+        </a>
+    </nav>
+
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+            <a href="#games" class="w3-bar-item w3-button" style="width:25% !important">GAMES</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+        </div>
+    </div>
+
+   
+    <div class="w3-padding-large" id="main">
+        
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Daniel Henrdiks</h1>
+            <p>Game Developer.</p>
+            <img src="\assets\DH-92.jpg" alt="boy" class="w3-image" width="500" height="500">
+        </header>
+
+       
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 class="w3-text-light-grey">About me </h2>
+            <hr style="width:200px" class="w3-opacity">
+            <p>
+                Hi, I'm Daniel Hendriks, a game developer with a passion for pushing the boundaries of game design. I’m dedicated to exploring new ideas and discussing what lies ahead for the gaming industry. Driven by a love for continuous improvement, I’m always eager to enhance both my skills and the games I create.
+
+                I studied under SAE Institue helping me create a strong foundations in my journy into game developing.in this youll see some of my games and thought prosess behind projects i have been working on during my studies. I've always been extremely curious in the technical side of games , which lead me to my passion and where i am today.
+            </p>
+
+
+         
+            <h3 class="w3-padding-16 w3-text-light-grey"></h3>
+            <h2 class="w3-text-light-grey">My Skills </h2>
+            <hr style="width:200px" class="w3-opacity">
+
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half w3-margin-bottom">
+                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-dark-grey w3-xlarge w3-padding-32">Langues</li>
+                        <li class="w3-padding-16">C++</li>
+                        <li class="w3-padding-16">C#</li>
+                        <li class="w3-padding-16">Delphi</li>
+                    </ul>
+                </div>
+
+                <div class="w3-half">
+                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-dark-grey w3-xlarge w3-padding-32">Engine</li>
+                        <li class="w3-padding-16">Unity</li>
+                        <li class="w3-padding-16">Unreal</li>
+                    </ul>
+                </div>
+
+                <div class="w3-row-padding" style="margin:0 -10px">
+                    <div class="w3-half w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                            <li class="w3-dark-grey w3-xlarge w3-padding-32">Software</li>
+                            <li class="w3-padding-16">Aseprite</li>
+                            <li class="w3-padding-16">Blender</li>
+                            <li class="w3-padding-16">Visual Studio</li>
+
+
+                        </ul>
+                    </div>
+
+
+
+                    
+                </div>
+
+
+               
+            </div>
+
+           
+            <div class="w3-padding-64 w3-content" id="games">
+                <h2 class="w3-text-light-grey">My Games</h2>
+                <hr style="width:200px" class="w3-opacity">
+
+                
+            
+                    <div class="w3-row-padding" style="margin:0 -16px">
+                        <div class="w3-half">
+                            <a onclick="showDialog('popupSamurai')" class="w3-bar-item w3-button" style="width:100%">Shattered Dynasty</a>
+                            <img src="/assets/MainMenu.png" style="width:100%">
+                            
+                            <a onclick="showDialog('popupKnight')" class="w3-bar-item w3-button" style="width:100%">Knight Watch</a>
+                            <img src="/assets/Knight.png" style="width:100%">
+                        </div>
+        
+                        <div class="w3-half">
+                            <a onclick="showDialog('popupAsteroids')" class="w3-bar-item w3-button" style="width:100%">Asteroids Destroyer</a>
+                            <img src="/assets/Space.png" style="width:100%">
+                        </div>
+                    
+                </div>
+           
+            </div>
+         
+       
+            <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+                <h2 class="w3-text-light-grey">Contact Me</h2>
+                <hr style="width:200px" class="w3-opacity">
+
+                <div class="w3-section">
+                    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> South Africa, Gordons Bay</p>
+                    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: hendriksdaniel2020@gmail.com</p>
+                    <p><i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <a href="//github.com/ThatDevManDan" > Daniel github</a></p>
+                    <p><i class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> <a href="//www.linkedin.com/in/daniel-hendriks-6a843026a/">Daniel Linkin</a></p>
+                </div><br>
+
+
+
+                </form>
+             
+            </div>
+
+        
+         
+
+         
+        </div>
+
+</body>
+
+<script>
+    function showDialog(id) {
+        document.getElementById(id).showModal();
+    }
+
+    function closeDialog(id) {
+        document.getElementById(id).close();
+    }
+</script>
+</html>
